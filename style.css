@@ -1,0 +1,888 @@
+/*Want responsive at max-width: 930px*/
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    background-color: #3b1414fd;
+
+}
+
+.icon {
+    color: white;
+    display: flex;
+}
+
+.icon img {
+    height: 50px;
+    margin-top: 10px;
+    margin-left: 25px;
+}
+
+.icon h3 {
+    font-size: 19px;
+    margin-top: 25px;
+    margin-left: 10px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    display: block;
+    padding: 10px 25px;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    border-radius: 30px;
+}
+
+nav ul li a:hover {
+    background-color: orange;
+    color: black;
+    transition: all 0.5s ease-out;
+
+}
+
+#home {
+    padding-top: 100px;
+    background-color: #3b1414fd;
+}
+
+.home {
+    display: flex;
+    justify-content: space-between;
+}
+
+.home img {
+    margin-right: 100px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    height: auto;
+}
+
+.intro {
+    justify-content: start;
+    margin-left: 80px;
+    margin-top: 100px;
+    color: white;
+    width: 400px;
+}
+
+.intro h1 {
+    color: orange;
+}
+
+.intro h4 {
+    font-size: 15px;
+}
+
+.buttons {
+    display: flex;
+
+}
+
+.but button {
+    margin-right: 10px;
+    background-color: rgba(255, 255, 255, 0.045);
+    width: 200px;
+    padding: 12px 20px;
+    border-radius: 20px;
+    border-style: none;
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.but button:hover {
+    background-color: orange;
+    color: black;
+    transition: all 0.5s ease-out;
+
+}
+
+@media screen and (max-width:800px) {
+    .nav {
+        display: none;
+
+
+    }
+
+    .information {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width:720x) {
+
+    .nav {
+        display: none;
+    }
+   
+
+   
+}
+
+@media screen and (max-width:930px) {
+
+    .home {
+        padding-top: 0px;
+    }
+
+    .intro {
+        margin-left: 30px;
+        padding-right: 30px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        width: 300px;
+    }
+
+    .intro h1 {
+        font-size: 30px;
+    }
+
+    .intro h2 {
+        font-size: 20px;
+    }
+
+    .but button {
+        width: 150px;
+        font-size: 15px;
+    }
+
+    .home img {
+        text-align: center;
+        height: 350px;
+        padding-left: 0px;
+        margin-top: 0px;
+        margin-bottom: 50px;
+    }
+
+}
+
+@media screen and (max-width:430px) {
+    .nav {
+        display: none;
+    }
+
+    .home {
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+
+
+    }
+
+    .intro {
+        margin-left: 30px;
+        margin-top: 0px;
+        margin-bottom: 50px;
+        width: 300px;
+    }
+
+    .intro h1 {
+        font-size: 25px;
+    }
+
+    .intro h2 {
+        font-size: 18px;
+    }
+
+    .but button {
+        width: 130px;
+        font-size: 12px;
+    }
+
+    .home img {
+        text-align: center;
+        height: 280px;
+        padding-left: 100px;
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+}
+
+
+.about {
+    display: flex;
+    justify-content: space-around;
+}
+
+.abouttext {
+    margin-left: 70px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 800px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.abouttext h1 {
+    margin-bottom: 70px;
+    font-size: 25px;
+    text-decoration: underline rgba(255, 166, 0, 0.463) 2px;
+
+}
+
+.abouttext p {
+    font-size: 20px;
+
+}
+
+.aboutcoffe img {
+    height: 450px;
+    margin-left: 100px;
+    margin-right: 50px;
+}
+
+@media screen and (max-width:930px) {
+    .aboutcoffe img {
+        height: 350px;
+        margin-left: 10px;
+        margin-top: 10px;
+        margin-right: 0px;
+
+
+    }
+
+    .abouttext {
+        margin-left: 0px;
+        margin-top: 50px;
+        margin-bottom: 30px;
+        width: 350px;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .abouttext h1 {
+        margin-bottom: 10px;
+    }
+
+}
+
+@media screen and (max-width:430px) {
+    .about {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-bottom: 50px;
+    }
+
+    .aboutcoffe img {
+        height: 350px;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+
+    .abouttext {
+        margin-left: 20px;
+        margin-top: 20px;
+        margin-bottom: 0px;
+        width: 300px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .abouttext h1 {
+        margin-bottom: 20px;
+    }
+
+}
+
+.services {
+    background-color: rgba(0, 0, 0, 0.841);
+
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service {
+    height: 400px;
+    width: 300px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.service img {
+    height: 250px;
+    align-items: center;
+}
+
+.service h3 {
+    color: white;
+    text-align: center;
+}
+
+.service p {
+    color: white;
+    text-align: center;
+}
+
+@media screen and (max-width:930px) {
+    .service {
+        height: 350px;
+        width: 300px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width:430px) {
+    .service {
+        height: 300px;
+        width: 300px;
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .service img {
+        height: 200px;
+        align-items: center;
+    }
+
+    .service h3 {
+        color: white;
+        text-align: center;
+    }
+
+    .service p {
+        color: white;
+        text-align: center;
+    }
+
+}
+
+.whyus {
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.063);
+    display: flex;
+    justify-content: space-between;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-right: 50px;
+    padding-left: 50px;
+
+
+}
+
+.why {
+    width: 300px;
+    margin-left: 20px;
+    text-align: center;
+}
+
+.why h3 {
+    text-align: center;
+
+}
+
+.why img {
+    height: 150px;
+    align-content: center;
+}
+
+@media screen and (max-width:430px) {
+    .whyus {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 700px;
+        padding-top: 20px;
+        padding-bottom: 30px;
+        padding-right: 10px;
+        padding-left: 10px;
+
+
+
+    }
+
+    .why {
+        margin-top: 0px;
+        margin-bottom: 10px;
+        margin-left: 0px;
+        width: 300px;
+        text-align: center;
+    }
+
+    .why h3 {
+        text-align: center;
+
+    }
+
+    .why img {
+        height: 100px;
+        align-content: center;
+    }
+}
+
+.imagegallary {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+    align-items: center;
+}
+
+.gal {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+
+}
+
+.gal img {
+    height: 200px;
+    width: 300px;
+    overflow: hidden;
+    border-radius: 8px;
+    padding-bottom: 50px;
+    transition: transform 0.4s ease-in-out;
+}
+
+.gal img:hover {
+    transform: scale(1.2);
+}
+
+
+@media screen and (max-width:430px) {
+
+    .imagegallary {
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        margin-left: 10px;
+        margin-right: 10px;
+        align-items: center;
+    }
+
+    .gal {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+    }
+
+    .gal img {
+        height: 150px;
+        width: 250px;
+        overflow: hidden;
+        border-radius: 8px;
+        padding-bottom: 50px;
+        transition: transform 0.4s ease-in-out;
+    }
+
+    .gal img:hover {
+        transform: scale(1.1);
+    }
+}
+
+.contactus {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: rgba(0, 0, 0, 0.063);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 80px;
+    padding-right: 80px;
+
+}
+
+.form {
+    width: 100%;
+    max-width: 65%;
+}
+
+.form label {
+    display: block;
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.form input {
+    height: 40px;
+    width: 450px;
+    margin-bottom: 8px;
+    background-color: rgba(255, 255, 255, 0.752);
+    border-radius: 30px;
+    padding-left: 20px;
+    border: none;
+}
+
+.form textarea {
+    width: 450px;
+    padding-bottom: 100px;
+    border: solid 1px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+
+}
+
+.form button {
+    display: block;
+    height: 40px;
+    width: 150px;
+    border-radius: 15px;
+    font-size: 15px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.097);
+    font-weight: 500px;
+    font-size: 18px;
+    color: black;
+    box-shadow: 10px;
+}
+
+.form button:hover {
+    background-color: orange;
+    transition: all 0.5s ease-out;
+
+}
+
+.information {
+    margin-right: 50px;
+    margin-top: 50px;
+
+}
+
+.information p {
+    font-size: 13px;
+
+}
+
+.form p {
+    display: block;
+    justify-content: center;
+    margin-bottom: 50px;
+    font-size: 25px;
+    font-weight: 1500;
+}
+
+@media screen and (max-width:930px) {
+    .form p {
+        display: block;
+        justify-content: center;
+    }
+
+    .form {
+        margin-right: 70px;
+    }
+
+    .information {
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width:700px) {
+
+    .information {
+        display: none;
+    }
+}
+
+@media screen and (max-width:430px) {
+    .contactus {
+        padding-top: 0px;
+        padding-bottom: 30px;
+        background-color: rgba(0, 0, 0, 0.063);
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        padding-left: 30px;
+        padding-right: 0px;
+
+    }
+
+    .form p {
+        margin-left: px;
+        margin-bottom: 0px;
+        font-weight: 500;
+    }
+
+
+    .form label {
+        display: block;
+        font-size: 17px;
+        font-weight: 500;
+        margin-bottom: 8px;
+    }
+
+    .form input {
+        height: 40px;
+        width: 250px;
+        margin-bottom: 8px;
+        background-color: rgba(255, 255, 255, 0.752);
+        border-radius: 30px;
+        padding-left: 20px;
+        border: none;
+    }
+
+    .form textarea {
+        width: 250px;
+        padding-bottom: 100px;
+        border: none;
+        border-radius: 5px;
+        margin-bottom: 20px;
+
+    }
+
+    .form button {
+        display: block;
+        height: 40px;
+        width: 150px;
+        border-radius: 15px;
+        font-size: 15px;
+        border: none;
+        background-color: rgba(0, 0, 0, 0.097);
+        font-weight: 500px;
+        font-size: 18px;
+        color: black;
+        box-shadow: 10px;
+    }
+
+    .information {
+        display: none;
+    }
+
+
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.841);
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.logo {
+    display: flex;
+    padding-top: 20px;
+    gap: 10px;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.logo h3 {
+    color: white;
+}
+
+.usefullinks {
+    color: white;
+
+}
+
+.usefullinks ul li {
+    list-style: none;
+    display: flex;
+
+}
+
+.usefullinks ul li a {
+    color: white;
+    text-decoration: none;
+    flex-direction: column;
+    padding-bottom: 20px;
+    font-weight: 200px;
+}
+
+.usefullinks ul li a:hover {
+    color: orange;
+    text-decoration: underline coral;
+    transition: all 0.5s ease;
+}
+
+.usefullinks h4 {
+    padding-left: 40px;
+
+}
+
+.Contact {
+    color: white;
+
+}
+
+.Contact ul li {
+    list-style: none;
+    display: flex;
+
+}
+
+.Contact ul li a {
+    color: white;
+    text-decoration: none;
+    flex-direction: column;
+    padding-bottom: 20px;
+    font-weight: 200px;
+}
+
+.Contact h4 {
+    padding-left: 40px;
+
+}
+
+.follow {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    gap: 10px;
+
+}
+
+.follow img[alt="facebook"] {
+    height: 25px;
+    border-radius: 5px;
+
+}
+
+.follow img[alt="Instagram"] {
+    height: 25px;
+    border-radius: 5px;
+
+}
+
+.follow img[alt="Twitter"] {
+    height: 26px;
+    border-radius: 5px;
+
+}
+
+.follow img[alt="facebook"]:hover {
+    transition: all 0.5s ease-out;
+    background-color: white;
+}
+
+.follow img[alt="Instagram"]:hover {
+    transition: all 0.5s ease-out;
+    background-color: white;
+}
+
+.follow img[alt="Twitter"]:hover {
+    transition: all 0.5s ease-out;
+    background-color: white;
+}
+
+@media screen and (max-width:430px) {
+
+    footer {
+        background-color: rgba(0, 0, 0, 0.841);
+        display: flex;
+        flex-direction: column;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        padding-left: 10px;
+    }
+
+    .logo {
+        display: flex;
+        padding-top: 10px;
+        gap: 10px;
+    }
+
+    .logo img {
+        height: 40px;
+    }
+
+    .logo h3 {
+        color: white;
+        font-size: 17px;
+        margin-top: 10px;
+    }
+
+    .usefullinks ul li a {
+        color: white;
+        text-decoration: none;
+        flex-direction: column;
+        padding-bottom: 7px;
+        font-weight: 200px;
+        margin-left: 0px;
+    }
+
+    .usefullinks h4 {
+        padding-left: 15px;
+
+    }
+
+    .Contact {
+        color: white;
+
+    }
+
+    .Contact ul li {
+        list-style: none;
+        display: flex;
+
+    }
+
+    .Contact ul li a {
+        color: white;
+        text-decoration: none;
+        flex-direction: column;
+        padding-bottom: 10px;
+        font-weight: 200px;
+    }
+
+    .Contact h4 {
+        padding-left: 15px;
+
+    }
+
+    .follow {
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        list-style: none;
+        gap: 10px;
+        padding-bottom: 10px;
+
+    }
+
+    .follow img[alt="facebook"] {
+        height: 20px;
+        border-radius: 5px;
+
+    }
+
+    .follow img[alt="Instagram"] {
+        height: 20px;
+        border-radius: 5px;
+
+    }
+
+    .follow img[alt="Twitter"] {
+        height: 21px;
+        border-radius: 5px;
+
+    }
+}
